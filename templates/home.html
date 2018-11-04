@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>This is the homepage of the app</h1>
+    <h2>The blog posts are as follows:</h2>
+    {% for blog in posts%}
+        <h2>{{ blog['Title'] }}</h2>
+        <p>{{ blog['Content'] }}</p>
+    {% endfor %}
+</body>
+</html>
